@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star-Spangled States</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'patriotic-red': '#E0162B',
+              'patriotic-blue': '#0052A5',
+              'patriotic-white': '#FFFFFF',
+              'cream': '#F5F5F0'
+            },
+            fontFamily: {
+              sans: ['Comic Sans MS', 'Chalkboard SE', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Override react-usa-map default styles for better aesthetics */
+      path {
+        pointer-events: all;
+      }
+      path:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
+    "canvas-confetti": "https://esm.sh/canvas-confetti@1.9.3",
+    "@google/genai": "https://esm.sh/@google/genai",
+    "react-usa-map": "https://esm.sh/react-usa-map@1.5.0?external=react,react-dom"
+  }
+}
+</script>
+</head>
+  <body class="bg-blue-50">
+    <div id="root"></div>
+  </body>
+</html>
